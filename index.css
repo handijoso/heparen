@@ -279,18 +279,6 @@ time {
     opacity: 1;
 }
 
-.wa-container {
-    cursor: pointer;
-}
-
-.wa-container img {
-    width: 50px;
-    z-index: 3;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-
 footer {
     background-color: #ffe2da;
     width: 100vw;
@@ -312,6 +300,7 @@ footer a {
 .social-media-logo {
     border-radius: 50%;
     width: 40px;
+    margin: 0 2px;
 }
 
 .copyright {
