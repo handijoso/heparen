@@ -287,6 +287,7 @@ time {
 
 .wa-container img {
     width: 50px;
+    z-index: 3;
 }
 
 footer {
