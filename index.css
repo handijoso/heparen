@@ -170,6 +170,10 @@ body {
     padding: 0 15px;
 }
 
+.about-container {
+    border: 1px dashed #388fa3;
+}
+
 h1 {
     font-weight: bold;
 }
