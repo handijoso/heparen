@@ -279,10 +279,37 @@ time {
     opacity: 1;
 }
 
+.wa-container {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+}
+
+.wa-container img {
+    width: 50px;
+}
+
 footer {
     background-color: #ffe2da;
     width: 100vw;
-    height: 250px;
+    padding: 50px 20px;
+}
+
+.information,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #755b54;
+}
+
+.social-media-logo {
+    border-radius: 50%;
+    width: 40px;
 }
 
 .copyright {
@@ -310,6 +337,12 @@ footer {
 
     .class-type-container {
         justify-content: space-evenly;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 }
 
@@ -339,6 +372,7 @@ footer {
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
+        border-color: transparent #388fa3 transparent transparent;
     }
 }
 
