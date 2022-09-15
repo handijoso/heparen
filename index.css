@@ -171,7 +171,8 @@ body {
 }
 
 .about-container {
-    border: 1px dashed #388fa3;
+    border: 1px solid #388fa3;
+    padding: 10px 0;
 }
 
 h1 {
