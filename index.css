@@ -301,6 +301,10 @@ footer a {
     color: #755b54;
 }
 
+.social-media p {
+    font-weight: bold;
+}
+
 .social-media-logo {
     border-radius: 50%;
     width: 40px;
