@@ -417,12 +417,12 @@ footer a {
     }
 
     .subject-container {
-        height: 180px;
+        height: 200px;
     }
 
     .long-div,
     .subject-words {
-        height: 150px;
+        height: 170px;
     }
 }
 
