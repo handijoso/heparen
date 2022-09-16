@@ -46,3 +46,19 @@ function callbackFunc() {
 window.addEventListener("load", callbackFunc);
 window.addEventListener("resize", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
+
+const theory = document.querySelector(".subject-theory")
+const practical = document.querySelector(".subject-prac")
+const createImg = document.querySelector(".subject-img");
+
+theory.addEventListener("click", () => {
+    createImg.classList.add("subject-anime")
+    createImg.setAttribute("src", "Heparen-Dark-Blue.png");
+    setTimeout(() => createImg.classList.remove("subject-anime"), 1000)
+})
+
+practical.addEventListener("click", () => {
+    createImg.classList.add("subject-anime")
+    createImg.setAttribute("src", "praktek.jpeg");
+    setTimeout(() => createImg.classList.remove("subject-anime"), 1000)
+})
