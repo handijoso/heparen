@@ -7,8 +7,15 @@
 }
 
 body {
-    max-width: 100vw;
     background-color: #fbf5e9;
+    width: 100%;
+}
+
+.whatsApp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
 }
 
 .logo-image {
@@ -212,6 +219,7 @@ body {
 .system-container,
 .about-container {
     padding: 0 15px;
+    overflow-x: hidden;
 }
 
 .about-container {
