@@ -85,17 +85,11 @@ body {
 .subject-container {
     margin: 50px 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .subject-component {
     max-width: 80%;
-}
-
-.long-div {
-    width: 50%;
+    margin: 0 auto;
 }
 
 .subject-img {
@@ -113,10 +107,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 50%;
 }
 
 .short-div {
-    width: 100%;
     padding-top: 5px;
     text-align: center;
 }
