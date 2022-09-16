@@ -84,6 +84,7 @@ body {
 
 .subject-container {
     margin: 50px 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,13 +100,16 @@ body {
 
 .subject-img {
     width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .subject-anime {
     animation: subImg 1s ease-in forwards;
 }
 
-.subject-words {
+.subject-words,
+.long-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,8 +385,14 @@ footer a {
     }
 
     .subject-container {
-        height: 80vh;
+        height: 400px;
     }
+
+    .long-div,
+    .subject-words {
+        height: 320px;
+    }
+
 
     .subject-component {
         max-width: 700px;
@@ -413,7 +423,12 @@ footer a {
     }
 
     .subject-container {
-        height: 80vh;
+        height: 180px;
+    }
+
+    .long-div,
+    .subject-words {
+        height: 150px;
     }
 }
 
