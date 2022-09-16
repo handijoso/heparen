@@ -21,30 +21,32 @@ window.addEventListener("scroll", reveal);
 
 
 // define variables
-const items = document.querySelectorAll(".timeline .tahap");
+const items = document.querySelectorAll(".tahap");
 
 // check if an element is in viewport
-function isElementInViewport(el) {
+function isScrolledIntoView(el) {
     var rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    // Only completely visible elements return true:
+    // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    let isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
 }
 
 function callbackFunc() {
     for (var i = 0; i < items.length; i++) {
-        if (isElementInViewport(items[i])) {
+        if (isScrolledIntoView(items[i])) {
             items[i].classList.add("in-view");
         }
     }
 }
 
 // listen for events
-window.addEventListener("load", callbackFunc);
-window.addEventListener("resize", callbackFunc);
+// window.addEventListener("load", callbackFunc);
+// window.addEventListener("resize", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
 const theory = document.querySelector(".subject-theory")
