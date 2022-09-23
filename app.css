@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-top-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+.language-container {
+    width: 100%;
+    display: flex;
+    background-color: rgb(206, 142, 68);
+    justify-content: end;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.language-img {
+    width: 25x;
+    height: 15px;
+    margin: 0 10px;
+}
+
+.navbar-container {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo h2 {
+    font-weight: bold;
+}
+
+.show-background {
+    animation: show-bg 2s;
+    background-color: black;
+}
+
+.title,
+.navbar-section {
+    color: white;
+}
+
+.navbar-section {
+    font-weight: bold;
+}
+
+.navbar-section:hover {
+    color: rgb(206, 142, 68);
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+/*Change the icon color of the navbar toggler icon*/
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+h2 {
+    color: rgb(206, 142, 68);
+    font-weight: bold;
+    position: relative;
+}
+
+h2 span {
+    position: absolute;
+    top: -170px;
+}
+
+.wa-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 70px;
+    z-index: 50;
+}
+
+.telegram-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 80px;
+    z-index: 50;
+}
+
+.carousel-container {
+    height: 500px;
+    /* margin-top: -96px; */
+    margin-top: 23px;
+}
+
+.carousel-container img {
+    height: 500px;
+    filter: brightness(50%);
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 35%;
+    left: 5%;
+    z-index: 11;
+    color: white;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, .6);
+}
+
+.personal-data-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.personal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-container p:nth-child(2) {
+    font-weight: bold;
+    margin: 0;
+}
+
+.personal-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-img {
+    width: 30px;
+    margin: auto 5px;
+}
+
+.footer-container {
+    padding: 10px 20px;
+    background: black;
+}
+
+.contact-footer {
+    display: flex;
+    justify-content: start;
+}
+
+.contact-footer .footer-img {
+    width: 20px;
+    max-height: 20px;
+    margin: 0 5px;
+}
+
+.submit-button {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.section-list {
+    color: white;
+}
+
+.component {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.component.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-container {
+        padding: 20px 5px;
+    }
+
+    .carousel-container {
+        height: 300px;
+    }
+
+    .carousel-container img {
+        height: 300px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .personal-data-container {
+        flex-direction: column;
+    }
+
+    .personal-container {
+        margin: 25px 0;
+    }
+
+    .personal-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@keyframes show-bg {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 1);
+    }
+}
