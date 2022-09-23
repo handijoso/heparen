@@ -223,7 +223,6 @@ body {
 }
 
 .about-container {
-    border: 1px solid #755b54;
     padding: 10px 0;
 }
 
@@ -343,11 +342,10 @@ time {
 
 .class-container {
     text-align: center;
-    /* border: solid #755b54 2px; */
-    border-radius: 10px;
     padding: 10px 10px;
     width: 30%;
     max-width: 300px;
+    border: 1px solid black;
 }
 
 .private-container {
@@ -370,26 +368,23 @@ time {
     padding: 0;
 }
 
-.class-category:nth-child(odd) {
-    background-color: #ffe2da;
-}
-
-.class-category:nth-child(even) {
-    background-color: #e1efe0;
-}
-
 .class-category {
     margin: 25px 0;
     text-align: center;
     border-radius: 10px;
 }
 
-.class-container h5 {
-    font-weight: bold;
+.class-container h4 {
+    font-weight: bolder;
 }
 
 .class-category h6 {
     margin: 0;
+    font-weight: bold;
+}
+
+.class-category {
+    font-weight: bold;
 }
 
 footer {
