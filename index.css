@@ -350,17 +350,17 @@ time {
 
 .private-container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./one-on-one-class.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .semi-private-container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./group-class.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .group-container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./combine-class.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .class-categories {
@@ -371,7 +371,8 @@ time {
 .class-category {
     margin: 25px 0;
     text-align: center;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px #ffe2da;
 }
 
 .class-container h4 {
