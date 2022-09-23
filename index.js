@@ -55,7 +55,7 @@ const createImg = document.querySelector(".subject-img");
 
 theory.addEventListener("click", () => {
     createImg.classList.add("subject-anime")
-    createImg.setAttribute("src", "Heparen-Dark-Blue.png");
+    createImg.setAttribute("src", "./gallery/theory.jpeg");
     setTimeout(() => createImg.classList.remove("subject-anime"), 1000)
 })
 
