@@ -381,11 +381,11 @@ time {
 
 .class-category h6 {
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .class-category {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 footer {
@@ -406,7 +406,7 @@ footer a {
 }
 
 .social-media p {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .social-media-logo {
