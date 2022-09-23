@@ -343,7 +343,7 @@ time {
 
 .class-container {
     text-align: center;
-    border: solid #755b54 2px;
+    /* border: solid #755b54 2px; */
     border-radius: 10px;
     padding: 10px 10px;
     width: 30%;
@@ -351,20 +351,17 @@ time {
 }
 
 .private-container {
-    /* background-color: rgb(252, 172, 172); */
-    background-image: url("./one-on-one-class.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./one-on-one-class.png");
     background-size: contain;
 }
 
 .semi-private-container {
-    /* background-color: rgb(117, 255, 117); */
-    background-image: url("./group-class.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./group-class.png");
     background-size: contain;
 }
 
 .group-container {
-    /* background-color: rgb(126, 126, 255); */
-    background-image: url("./combine-class.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("./combine-class.png");
     background-size: contain;
 }
 
@@ -389,7 +386,6 @@ time {
 
 .class-container h5 {
     font-weight: bold;
-    color: white;
 }
 
 .class-category h6 {
