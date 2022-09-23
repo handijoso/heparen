@@ -343,22 +343,29 @@ time {
 
 .class-container {
     text-align: center;
-    border: solid grey 2px;
+    border: solid #755b54 2px;
     border-radius: 10px;
     padding: 10px 10px;
     width: 30%;
+    max-width: 300px;
 }
 
 .private-container {
-    background-color: rgb(252, 172, 172);
+    /* background-color: rgb(252, 172, 172); */
+    background-image: url("./one-on-one-class.png");
+    background-size: contain;
 }
 
 .semi-private-container {
-    background-color: rgb(117, 255, 117);
+    /* background-color: rgb(117, 255, 117); */
+    background-image: url("./group-class.png");
+    background-size: contain;
 }
 
 .group-container {
-    background-color: rgb(126, 126, 255);
+    /* background-color: rgb(126, 126, 255); */
+    background-image: url("./combine-class.png");
+    background-size: contain;
 }
 
 .class-categories {
@@ -382,6 +389,7 @@ time {
 
 .class-container h5 {
     font-weight: bold;
+    color: white;
 }
 
 .class-category h6 {
