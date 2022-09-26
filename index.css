@@ -99,6 +99,10 @@ body {
     margin: 10px 10px;
 }
 
+/* .school-size {
+    width: 150px;
+} */
+
 .subject-container {
     margin: 50px 0;
     height: 100%;
@@ -169,6 +173,19 @@ h1 {
 h1 {
     text-align: center;
 }
+
+.register-btn {
+    border: none;
+    background-color: #388fa3;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.register-btn .register-txt {
+    text-decoration: none;
+    color: #e1efe0;
+}
+
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -341,6 +358,14 @@ time {
 
 .card-body .tutor-text {
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .tutor-text p {
+    font-weight: bold;
+    margin: 0;
 }
 
 footer {
@@ -429,6 +454,10 @@ footer a {
 }
 
 @media (max-width: 450px) {
+    .school-img {
+        width: 100px;
+    }
+
     .class-type-container {
         width: 100%;
         display: flex;
