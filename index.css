@@ -110,7 +110,7 @@ body {
 }
 
 .subject-component {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -129,8 +129,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 50%;
-    height: 200px;
+    height: 300px;
+    padding: 0;
 }
 
 .short-div {
@@ -138,14 +138,12 @@ body {
     text-align: center;
 }
 
-.subject-theory,
-.subject-prac {
+.subject-name {
     border: none;
     background-color: transparent;
 }
 
-.subject-theory:hover,
-.subject-prac:hover {
+.subject-name:hover {
     color: #388fa3;
 }
 
@@ -458,6 +456,10 @@ footer a {
         width: 100px;
     }
 
+    .subject-name {
+        font-size: 15px;
+    }
+
     .class-type-container {
         width: 100%;
         display: flex;
@@ -476,6 +478,10 @@ footer a {
 }
 
 @media (max-width: 899px) {
+    .subject-container {
+        margin: 50px 0;
+    }
+
     .class-option {
         flex-direction: column;
         align-items: center;
